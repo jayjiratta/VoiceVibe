@@ -43,9 +43,8 @@ In the initial version of the project, I will utilize pre-trained models for spe
 
 **Version 2: Custom-trained Models**
 
-In the second version, I plan to implement custom-trained models to enhance the application's capabilities:
+In the second version, I plan to implement custom-trained models :
 
-- **Speech-to-Text**: Training a custom model tailored to specific audio datasets for improved accuracy in transcription.
-- **Sentiment Analysis**: Developing a custom sentiment analysis model using machine learning techniques to better capture nuanced emotions.
+- **Speech-to-Text**: Training a custom model tailored to specific audio datasets.
+- **Sentiment Analysis**: Developing a custom sentiment analysis model using machine learning techniques.
 
-This phased approach allows for a robust initial implementation using reliable pre-trained models, followed by an advanced version with custom models for enhanced performance and customization.
