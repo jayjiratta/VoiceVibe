@@ -38,8 +38,8 @@ To run this web application locally, follow these steps:
 
 In the initial version of the project, I will utilize pre-trained models for speech-to-text conversion and sentiment analysis:
 
-- **Speech-to-Text**: Using OpenAI's Whisper model for accurate and efficient transcription of audio files.
-- **Sentiment Analysis**: Leveraging VADER (Valence Aware Dictionary and sEntiment Reasoner) for sentiment analysis, which is well-suited for detecting emotions in text.
+- **Speech-to-Text**: Using [OpenAI's Whisper model](https://github.com/openai/whisper) for accurate and efficient transcription of audio files. 
+- **Sentiment Analysis**: Leveraging [VADER (Valence Aware Dictionary and sEntiment Reasoner)](https://github.com/cjhutto/vaderSentiment) for sentiment analysis, which is well-suited for detecting emotions in text.
 
 **Version 2: Custom-trained Models**
 
