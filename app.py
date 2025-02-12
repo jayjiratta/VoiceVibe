@@ -3,7 +3,7 @@ import os
 import whisper
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 # UPLOAD_FOLDER = 'uploads'
 # os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
