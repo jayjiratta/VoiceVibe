@@ -25,13 +25,13 @@ To run this web application locally, follow these steps:
     pip install -r requirements.txt
     ```
 
-5. Run the Flask application:
+6. Run the Flask application:
 
     ```
     flask --app app  run --debug
     ```
 
-6. Open your web browser and navigate to `http://localhost:5000` to access the application.
+7. Open your web browser and navigate to `http://localhost:5000` to access the application.
 
 ## Project Versions
 **Version 1: Pre-trained Models**
@@ -39,7 +39,7 @@ To run this web application locally, follow these steps:
 In the initial version of the project, I will utilize pre-trained models for speech-to-text conversion and sentiment analysis:
 
 - **Speech-to-Text**: Using [OpenAI's Whisper model](https://github.com/openai/whisper) for accurate and efficient transcription of audio files. 
-- **Sentiment Analysis**: Leveraging [VADER (Valence Aware Dictionary and sEntiment Reasoner)](https://github.com/cjhutto/vaderSentiment) for sentiment analysis, which is well-suited for detecting emotions in text.
+- **Sentiment Analysis**: Leveraging [transformers)](https://github.com/huggingface/transformers) for sentiment analysis, which is well-suited for detecting emotions in text.
 
 **Version 2: Custom-trained Models**
 
@@ -48,3 +48,11 @@ In the second version, I plan to implement custom-trained models :
 - **Speech-to-Text**: Training a custom model tailored to specific audio datasets.
 - **Sentiment Analysis**: Developing a custom sentiment analysis model using machine learning techniques.
 
+<!-- Note
+Problem:
+Issue with ffmpeg when trying to run ML_test/sentiment_analysis.py.
+
+Solution:
+Run ```scoop install ffmpeg``` to install ffmpeg. 
+
+-->
