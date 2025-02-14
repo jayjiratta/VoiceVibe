@@ -39,7 +39,7 @@ To run this web application locally, follow these steps:
 In the initial version of the project, I will utilize pre-trained models for speech-to-text conversion and sentiment analysis:
 
 - **Speech-to-Text**: Using [OpenAI's Whisper model](https://github.com/openai/whisper) for accurate and efficient transcription of audio files. 
-- **Sentiment Analysis**: Leveraging [transformers)](https://github.com/huggingface/transformers) for sentiment analysis, which is well-suited for detecting emotions in text.
+- **Sentiment Analysis**: Leveraging [transformers](https://github.com/huggingface/transformers) for sentiment analysis, which is well-suited for detecting emotions in text.
 
 **Version 2: Custom-trained Models**
 
