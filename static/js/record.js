@@ -22,13 +22,24 @@ document.getElementById("recordButton").addEventListener("click", async function
             let formData = new FormData();
             formData.append("audio", audioBlob, "recording.wav");
 
-            let response = await fetch("/upload", {
-                method: "POST",
-                body: formData
-            });
+            fetch("/upload", { method: "POST", body: formData })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    document.getElementById("transcriptionText").innerText = data.transcription;
+                    document.getElementById("positive").innerText = data.sentiment.positive + "%";
+                    document.getElementById("neutral").innerText = data.sentiment.neutral + "%";
+                    document.getElementById("negative").innerText = data.sentiment.negative + "%";
+                })
+                .catch(error => console.error("Error:", error));
 
-            let result = await response.json();
-            alert(result.message); // แจ้งผลลัพธ์
+            // let response = await fetch("/upload", {
+            //     method: "POST",
+            //     body: formData
+            // });
+
+            // let result = await response.json();
+            // alert(result.message); // แจ้งผลลัพธ์
         };
 
         mediaRecorder.start();
@@ -37,4 +48,24 @@ document.getElementById("recordButton").addEventListener("click", async function
         mediaRecorder.stop();
         this.textContent = "Record";
     }
+});
+
+document.getElementById("uploadFile").addEventListener("change", function (event) {
+    let file = event.target.files[0];
+    if (!file) return;
+
+    let formData = new FormData();
+    formData.append("audio", file);
+
+    fetch("/upload", { method: "POST", body: formData })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            document.getElementById("transcriptionText").innerText = data.transcription;
+            document.getElementById("positive").innerText = data.sentiment.positive + "%";
+            document.getElementById("neutral").innerText = data.sentiment.neutral + "%";
+            document.getElementById("negative").innerText = data.sentiment.negative + "%";
+        })
+        .catch(error => console.error("Error:", error));
+
 });
