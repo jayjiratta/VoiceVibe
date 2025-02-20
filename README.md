@@ -34,19 +34,22 @@ To run this web application locally, follow these steps:
 7. Open your web browser and navigate to `http://localhost:5000` to access the application.
 
 ## Project Versions
+
 **Version 1: Pre-trained Models**
 
 In the initial version of the project, I will utilize pre-trained models for speech-to-text conversion and sentiment analysis:
 
 - **Speech-to-Text**: Using [OpenAI's Whisper model](https://github.com/openai/whisper) for accurate and efficient transcription of audio files. 
 - **Sentiment Analysis**: Leveraging [transformers](https://github.com/huggingface/transformers) for sentiment analysis, which is well-suited for detecting emotions in text.
+- **Deployment**: The results will be displayed using Flask for a simple and efficient web interface.
 
 **Version 2: Custom-trained Models**
 
-In the second version, I plan to implement custom-trained models :
+In the second version, I plan to implement custom-trained models:
 
 - **Speech-to-Text**: Training a custom model tailored to specific audio datasets.
 - **Sentiment Analysis**: Developing a custom sentiment analysis model using machine learning techniques.
+- **Deployment**: Switching from Flask to [Streamlit](https://streamlit.io/) for a more interactive and user-friendly interface.
 
 <!-- Note
 Problem:
