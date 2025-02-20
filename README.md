@@ -35,21 +35,24 @@ To run this web application locally, follow these steps:
 
 ## Project Versions
 
-**Version 1: Pre-trained Models**
+## Phase 1: Baseline Model Deployment
+**Objective:** simple prototype using pre-trained models without fine-tuning.
 
-In the initial version of the project, I will utilize pre-trained models for speech-to-text conversion and sentiment analysis:
+### Technologies:
+- **web:** Flask
+- **Models:**
+  - **Speech-to-Text (STT):** [Whisper by OpenAI](https://openai.com/research/whisper)
+  - **Sentiment Analysis:** [Transformer models from Hugging Face](https://huggingface.co/models)
+- **Frontend:** Flask templates and basic HTML/CSS
 
-- **Speech-to-Text**: Using [OpenAI's Whisper model](https://github.com/openai/whisper) for accurate and efficient transcription of audio files. 
-- **Sentiment Analysis**: Leveraging [transformers](https://github.com/huggingface/transformers) for sentiment analysis, which is well-suited for detecting emotions in text.
-- **Deployment**: The results will be displayed using Flask for a simple and efficient web interface.
+## Phase 2: Custom Model Implementation
+**Objective:** using a smaller pre-trained STT model for fine-tuning and a custom-trained Sentiment Analysis model.
 
-**Version 2: Custom-trained Models**
-
-In the second version, I plan to implement custom-trained models:
-
-- **Speech-to-Text**: Training a custom model tailored to specific audio datasets.
-- **Sentiment Analysis**: Developing a custom sentiment analysis model using machine learning techniques.
-- **Deployment**: Switching from Flask to [Streamlit](https://streamlit.io/) for a more interactive and user-friendly interface.
+### Technologies:
+- **web:** [Streamlit](https://streamlit.io/)
+- **Models:**
+  - **STT:** Pretrained STT model
+  - **Sentiment Analysis:** Custom-trained transformer model
 
 <!-- Note
 Problem:
