@@ -169,5 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
 datasets/
+speech_recognition_model_1/variables/variables.data-00000-of-00001
 
