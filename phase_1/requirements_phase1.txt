@@ -1,0 +1,10 @@
+flask
+whisper
+openai-whisper
+ffmpeg-python
+transformers 
+jiwer
+ipython
+matplotlib
+numpy
+pandas
